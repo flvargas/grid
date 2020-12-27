@@ -1,0 +1,22 @@
+/*
+repeat()
+minmax()
+max-content
+min-content
+*/
+
+#parent {
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 2fr) minmax(100px, 500px);
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+#parent div {
+    background-color: darksalmon;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#parent div:nth-child(odd) {
+    background-color: lightslategrey;
+}
